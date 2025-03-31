@@ -8,7 +8,7 @@ describe("Test de factorial", () => {
         expect(factorial(2)).toBe(2);
     });
     test("Vérifier si en passant n = 0, le résultat est 0", () => {
-        expect(factorial(0)).toBe(0);
+        expect(factorial(0)).toBe(1);
     });
     test("Vérifier si en passant n = 5, le résultat est 120", () => {
         expect(factorial(5)).toBe(120);
