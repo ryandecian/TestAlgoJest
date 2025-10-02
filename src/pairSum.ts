@@ -1,3 +1,4 @@
+/* Méthode naive */
 export function pairSum(nums: number[], target: number): [number, number] | null {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
