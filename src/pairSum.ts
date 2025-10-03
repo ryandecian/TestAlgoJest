@@ -39,3 +39,23 @@ export function pairSumOptimized( tab: number[], cible: number) {
     }
     return null;
 }
+
+/* Documentation :
+La fonction pairSumOptimized utilise une approche basée sur une table de hachage (Map) pour trouver deux indices dans un tableau dont les valeurs additionnées donnent une cible spécifique.
+*/
+
+/* Exemple d'utilisation :
+const tab = [1, 2, 7, 4];
+const cible = 5;
+const result = pairSumOptimized(tab, cible);
+console.log(result); // Affiche [1, 2] car tab[1] + tab[2] = 2 + 7 = 9
+*/
+
+/* Les méthodes du .Map :
+- set(key: K, value: V): void - Ajoute une paire clé-valeur à la Map.
+- get(key: K): V | undefined - Renvoie la valeur associée à la clé, ou undefined si la clé n'existe pas.
+- has(key: K): boolean - Renvoie true si la clé existe dans la Map, sinon false.
+- delete(key: K): boolean - Supprime la paire clé-valeur de la Map et renvoie true si la clé existait, sinon false.
+- clear(): void - Supprime toutes les paires clé-valeur de la Map.
+- size: number - Renvoie le nombre de paires clé-valeur dans la Map.
+*/
