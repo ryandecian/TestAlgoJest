@@ -25,4 +25,17 @@ console.log(result); // Affiche [0, 1] car nums[0] + nums[1] = 2 + 7 = 9
 const tab = [1, 2, 7, 4]
 const cible = 5
 
-function pairSumOptimized( tab: number[], cible: number) {}
+export function pairSumOptimized( tab: number[], cible: number) {
+    const map = new Map<number, number>(); /* Clé : valeur de l'index, Valeur : l'index ou position dans le tableau */
+
+    for (let i = 0; i < tab.length; i++) {
+        const x: number = tab[i]; /* Valeur de l'index. Ex : Si i = 0 alors x = 1 */
+        const result: number = cible - x; /* Résultat de la cible - la valeur de l'index */
+
+        if (map.has(result)) {
+            return [map.get(result) as number, i];
+        }
+        map.set(x, i) /* On ajoute la valeur de l'index et sa position dans le tableau */
+    }
+    return null;
+}
