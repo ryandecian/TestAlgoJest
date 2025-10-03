@@ -21,3 +21,8 @@ const target = 9;
 const result = pairSum(nums, target);
 console.log(result); // Affiche [0, 1] car nums[0] + nums[1] = 2 + 7 = 9
 */
+
+const tab = [1, 2, 7, 4]
+const cible = 5
+
+function pairSumOptimized( tab: number[], cible: number) {}
